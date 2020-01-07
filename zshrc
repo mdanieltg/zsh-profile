@@ -29,7 +29,8 @@ bindkey -v
 
 # Aliases
 alias g=git
-alias gl='git clone'
-alias gs='git status -s'
+alias gc='git clone'
+alias go='git commit'
+alias gd='git diff'
 alias gf='git fetch'
-alias gc='git commit'
+alias gs='git status -s'
