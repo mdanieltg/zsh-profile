@@ -9,6 +9,7 @@ source $ZSH/oh-my-zsh.sh
 fpath+=("$HOME/.zsh/pure")
 autoload -U promptinit; promptinit
 zstyle :prompt:pure:prompt:success color cyan
+zstyle :prompt:pure:prompt:error color magenta
 PURE_GIT_UNTRACKED_DIRTY=0
 PURE_CMD_MAX_EXEC_TIME=20
 prompt pure
