@@ -14,6 +14,9 @@ PURE_GIT_UNTRACKED_DIRTY=0
 PURE_CMD_MAX_EXEC_TIME=20
 prompt pure
 
+# Export Yarn user global path
+export PATH="$(yarn global bin):$PATH"
+
 # Zsh git prompt
 #GIT_PROMPT_EXECUTABLE="haskell"
 #source $HOME/.zsh-git-prompt/zshrc.sh
