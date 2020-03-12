@@ -37,3 +37,14 @@ alias go='git commit'
 alias gd='git diff'
 alias gf='git fetch'
 alias gs='git status -s'
+
+# mkdir and cd into new directory
+function mkd {
+	if [ "$#" -eq 1 ]; then
+		mkdir $1 && cd $1
+	elif [ "$#" -gt 1 ]; then
+		echo 'Se esperaba un sólo argumento'
+	else
+		echo 'mkdir: falta un operando'
+	fi
+}
