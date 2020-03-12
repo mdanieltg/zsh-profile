@@ -22,9 +22,9 @@ export PATH="$(yarn global bin):$PATH"
 #source $HOME/.zsh-git-prompt/zshrc.sh
 
 # Tilix VTE
-#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-#	source /etc/profile.d/vte-2.91.sh
-#fi
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+	source /etc/profile.d/vte-2.91.sh
+fi
 
 # User configuration
 DOTNET_CLI_TELEMETRY_OPTOUT=1
