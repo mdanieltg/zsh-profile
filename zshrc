@@ -29,6 +29,7 @@ fi
 # User configuration
 DOTNET_CLI_TELEMETRY_OPTOUT=1
 bindkey -v
+set -o noclobber
 
 # Aliases
 alias g=git
