@@ -37,6 +37,7 @@ alias gc='git clone'
 alias go='git commit'
 alias gd='git diff'
 alias gf='git fetch'
+alias gp='git push'
 alias gs='git status -s'
 
 # mkdir and cd into new directory
