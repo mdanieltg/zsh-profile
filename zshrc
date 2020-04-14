@@ -35,6 +35,8 @@ DOTNET_CLI_TELEMETRY_OPTOUT=1
 bindkey -v
 set -o noclobber
 
+export LESS=-RF SYSTEMD_PAGER=
+
 # Aliases
 alias g=git
 alias gc='git clone'
