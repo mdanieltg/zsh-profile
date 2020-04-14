@@ -14,8 +14,17 @@ PURE_GIT_UNTRACKED_DIRTY=0
 PURE_CMD_MAX_EXEC_TIME=20
 prompt pure
 
-# Export Yarn user global path
-#export PATH="$(yarn global bin):$PATH"
+# Add relevant directories to the PATH
+YARN_GPATH="$(yarn global bin)"
+if ! [[ "$PATH" =~ "$YARN_GPATH:" ]]; then
+	PATH="$YARN_GPATH:$PATH"
+fi
+if ! [[ "$PATH" =~ "$HOME/bin:" ]]; then
+	PATH="$HOME/bin:$PATH"
+fi
+if ! [[ "$PATH" =~ "$HOME/.local/bin:" ]]; then
+	PATH="$HOME/.local/bin:$PATH"
+fi
 
 # Zsh git prompt
 #GIT_PROMPT_EXECUTABLE="haskell"
