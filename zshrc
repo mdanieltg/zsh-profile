@@ -93,3 +93,5 @@ fi
 
 ## zsh-syntax-highlighting
 source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source $ZSH/sudo.zsh
