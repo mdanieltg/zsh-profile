@@ -59,8 +59,8 @@ function mkcd() {
 ## Aliases
 alias g=git
 alias ga='git add'
-alias gau='git add --update'
 alias gap='git add --patch'
+alias gau='git add --update'
 alias gc='git clone'
 alias gd='git diff'
 alias gf='git fetch'
