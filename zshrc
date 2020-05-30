@@ -81,6 +81,7 @@ alias yay='sudo pacman'
 ## User variables
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export LESS=-RF SYSTEMD_PAGER=
+export WORDCHARS=_
 
 ## Prompt
 local prompt_newline=$'\n%{\r%}'
