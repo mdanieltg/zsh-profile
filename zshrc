@@ -102,3 +102,5 @@ fi
 source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/sudo.zsh
+
+# vim: ts=4 sw=4 noet
