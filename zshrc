@@ -89,13 +89,13 @@ local prompt_newline=$'\n%{\r%}'
 
 if [[ "$(tty)" = /dev/pts/? ]]
 then
-    PROMPT="%F{245}%n@%M%f %F{012}%~% %f"
-    PROMPT+=${prompt_newline}
-    PROMPT+="%F{006}❯%f%  "
+	PROMPT="%F{245}%n@%M%f %F{012}%~% %f"
+	PROMPT+=${prompt_newline}
+	PROMPT+="%F{006}❯%f%  "
 else
-    PROMPT="%F{white}%n@%M%f %F{blue}%~% %f"
-    PROMPT+=${prompt_newline}
-    PROMPT+="%F{006}>%f%  "
+	PROMPT="%F{white}%n@%M%f %F{blue}%~% %f"
+	PROMPT+=${prompt_newline}
+	PROMPT+="%F{006}>%f%  "
 fi
 
 ## zsh-syntax-highlighting
