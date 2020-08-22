@@ -77,7 +77,7 @@ alias md='mkdir -p'
 alias rd=rmdir
 
 ## User variables
-export EDITOR=/bin/vim
+export EDITOR=$(which vim)
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export LESS=-RF SYSTEMD_PAGER=
 export WORDCHARS=_
