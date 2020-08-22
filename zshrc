@@ -5,7 +5,6 @@ export ZSH=$HOME/.zsh
 zstyle ':completion:*' auto-description '%d'
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' insert-unambiguous true
-#zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 zstyle ':completion:*' menu select=1
 zstyle ':completion:*' original false
