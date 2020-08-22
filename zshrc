@@ -75,7 +75,6 @@ alias ld='ls -l --group-directories-first'
 alias ll='ls -lh'
 alias md='mkdir -p'
 alias rd=rmdir
-alias yay='sudo pacman'
 
 ## User variables
 export EDITOR=/bin/vim
