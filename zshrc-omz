@@ -1,0 +1,52 @@
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="agnoster"
+#CASE_SENSITIVE="true"
+#DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+plugins=(sudo zsh-syntax-highlighting zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+## Add relevant directories to the PATH
+if ! [[ "$PATH" =~ "$HOME/.local/bin:" ]]; then
+	PATH="$HOME/.local/bin:$PATH"
+fi
+#if ! [[ "$PATH" =~ "$HOME/bin:" ]]; then
+#	PATH="$HOME/bin:$PATH"
+#fi
+
+## mkdir and cd into new directory
+function mkcd() {
+	mkdir -p $@ && cd ${@:$#}
+}
+
+## Aliases
+alias g=git
+alias ga='git add'
+alias gap='git add --patch'
+alias gau='git add --update'
+alias gc='git clone'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git pull'
+alias go='git commit'
+alias gom='git commit -m'
+alias gp='git push'
+alias gs='git status -s'
+alias ls='ls --color=auto'
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ld='ls -l --group-directories-first'
+alias ll='ls -lh'
+alias md='mkdir -p'
+alias rd=rmdir
+
+## User variables
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export LESS=-RF SYSTEMD_PAGER=
+
+# vim: ts=4 sw=4 noet
