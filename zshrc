@@ -43,12 +43,12 @@ bindkey '^[[1;5D' vi-backward-word
 bindkey '^[[3;5~' vi-change-whole-line
 
 ## Add relevant directories to the PATH
-if ! [[ "$PATH" =~ "$HOME/bin:" ]]; then
-	PATH="$HOME/bin:$PATH"
-fi
 if ! [[ "$PATH" =~ "$HOME/.local/bin:" ]]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
+#if ! [[ "$PATH" =~ "$HOME/bin:" ]]; then
+#	PATH="$HOME/bin:$PATH"
+#fi
 
 ## mkdir and cd into new directory
 function mkcd() {
