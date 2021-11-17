@@ -15,9 +15,6 @@ source $ZSH/oh-my-zsh.sh
 if ! [[ "$PATH" =~ "$HOME/.local/bin:" ]]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
-#if ! [[ "$PATH" =~ "$HOME/bin:" ]]; then
-#	PATH="$HOME/bin:$PATH"
-#fi
 
 ## mkdir and cd into new directory
 function mkcd() {
