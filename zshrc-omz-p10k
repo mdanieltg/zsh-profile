@@ -21,6 +21,14 @@ function mkcd() {
 	mkdir -p $@ && cd ${@:$#}
 }
 
+# dotnet-cli completion
+dotnet_zsh_completion()
+{
+	local completions=("$(dotnet complete "$words")")
+	reply=( "${(ps:\n:)completions}" )
+}
+compctl -K dotnet_zsh_completion dotnet
+
 ## Aliases
 alias g=git
 alias ga='git add'
