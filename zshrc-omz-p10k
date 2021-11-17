@@ -43,7 +43,7 @@ alias md='mkdir -p'
 alias rd=rmdir
 
 ## User variables
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_CLI_TELEMETRY_OPTOUT=true
 export LESS=-RF SYSTEMD_PAGER=
 
 ## NVM
